@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Disaster Management AI - Using predictive machine learning, real-time alert systems, and optimized emergency response routing to save lives.">
+  <meta name="author" content="Disaster Management AI Project Team">
+  <title>Disaster Management AI - Smart Emergency Prediction & Response</title>
+  
+  <!-- Preload Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header id="header">
+    <div class="container navbar">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <!-- SVG Shield and Pulse Icon representing AI Protection -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <circle cx="12" cy="11" r="3" fill="currentColor" fill-opacity="0.2"/>
+        </svg>
+        <span>Rescue<span>AI</span></span>
+      </a>
+      
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-cta">
+        <a href="#about" class="btn btn-primary">
+          Launch Simulator
+        </a>
+      </div>
+      
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content scroll-animate">
+        <div class="hero-tag">
+          <span></span> Dynamic Emergency Prediction
+        </div>
+        <h1 class="hero-title">
+          Disaster Management <span class="gradient-text glow-text">AI</span>
+        </h1>
+        <p class="hero-desc">
+          Harnessing advanced deep learning neural networks to forecast environmental threats, broadcast instant rescue alerts, and calculate optimal evacuation routes in real-time.
+        </p>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">Try Live Simulator</a>
+          <a href="#features" class="btn btn-secondary">Explore Features</a>
+        </div>
+      </div>
+      <div class="hero-graphic scroll-animate delay-200">
+        <div class="hero-visual-wrapper">
+          <img class="hero-image" src="assets/hero-digital-globe.png" alt="RescueAI Disaster Monitoring digital globe illustration">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Live Simulation Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header scroll-animate">
+        <span class="section-tag">System Core</span>
+        <h2 class="section-title">Live AI Threat Simulator</h2>
+        <p class="section-desc">
+          Witness our deep learning models analyze geospatial feeds, satellite telemetry, and sensor arrays to predict disaster spreads and formulate automated safety solutions.
+        </p>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-info scroll-animate">
+          <h3>Preventing Disasters Before They Escalate</h3>
+          <p>
+            Traditional disaster response is reactive. RescueAI uses active spatial temporal models, integrating hydrology data, temperature thresholds, and seismic readings to detect warning signs.
+          </p>
+          <ul class="about-features-list">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <div>
+                <h4>93%+ Prediction Accuracy</h4>
+                <p>Advanced neural networks trained on decades of regional disaster telemetry.</p>
+              </div>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <div>
+                <h4>Millisecond Dispatch Latency</h4>
+                <p>Automated warning relays communicate critical routes directly via localized networks.</p>
+              </div>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <div>
+                <h4>Adaptive Evacuation Routing</h4>
+                <p>Generates evacuation routes, adapting automatically to blockages or rising threats.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Live AI Simulation Widget -->
+        <div class="sim-widget scroll-animate delay-200" id="sim-widget">
+          <div class="sim-header">
+            <h3 class="sim-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                <line x1="6" y1="18" x2="6.01" y2="18"/>
+              </svg>
+              AI Monitoring Feed
+            </h3>
+            <div class="sim-status">
+              <span class="sim-status-dot"></span>
+              Live Telemetry
+            </div>
+          </div>
+          
+          <!-- Tab controls to select active simulated disaster -->
+          <div class="sim-tabs">
+            <button class="sim-tab-btn active" data-type="wildfire">
+              🔥 Wildfire
+            </button>
+            <button class="sim-tab-btn" data-type="flood">
+              🌊 Flood
+            </button>
+            <button class="sim-tab-btn" data-type="earthquake">
+              ⚡ Seismic
+            </button>
+          </div>
+          
+          <!-- Main Simulation Display -->
+          <div class="sim-display-grid">
+            <div class="sim-map-area">
+              <!-- Stylized map representation using vector elements -->
+              <svg class="sim-map-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Map grids -->
+                <line x1="0" y1="20" x2="100" y2="20" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                <line x1="0" y1="40" x2="100" y2="40" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                <line x1="0" y1="60" x2="100" y2="60" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                <line x1="0" y1="80" x2="100" y2="80" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                <line x1="20" y1="0" x2="20" y2="100" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                <line x1="40" y1="0" x2="40" y2="100" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                <line x1="60" y1="0" x2="60" y2="100" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                <line x1="80" y1="0" x2="80" y2="100" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                
+                <!-- Abstract regional boundary curves -->
+                <path d="M10 30 Q25 15 45 35 T85 20" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+                <path d="M15 70 Q45 85 60 55 T90 75" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+                
+                <!-- Evacuation routing path (drawn dynamically or styled here, animated in JS) -->
+                <path id="evac-route-line" d="" stroke="var(--secondary)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100" fill="none" style="transition: stroke-dashoffset 2s ease;"/>
+              </svg>
+              
+              <!-- Target indicators overlayed by Javascript -->
+              <div class="sim-alert-node" id="sim-node"></div>
+            </div>
+            
+            <div class="sim-info-area">
+              <div class="sim-data-card">
+                <div class="sim-data-label">Threat Severity</div>
+                <div class="sim-threat-level" id="sim-threat-level">
+                  <span class="threat-badge threat-high" id="threat-text">Critical Risk</span>
+                </div>
+              </div>
+              
+              <div class="sim-data-card">
+                <div class="sim-data-label">Core Predictive Model</div>
+                <div class="sim-data-val" id="sim-model-val">DeepConv Wildfire-Net</div>
+              </div>
+              
+              <div class="sim-data-card">
+                <div class="sim-data-label">Prediction Confidence</div>
+                <div class="sim-data-val" id="sim-confidence-val">94.7% Conf.</div>
+              </div>
+              
+              <div class="sim-data-card">
+                <div class="sim-data-label">AI Recommended Action</div>
+                <div class="sim-data-val" id="sim-action-val" style="font-size: 0.95rem; font-weight: 500; color: var(--text-secondary);">
+                  Deploy fire breaks at sector C-4 & alert Zone 2.
+                </div>
+              </div>
+              
+              <button class="sim-btn" id="sim-action-btn">
+                Simulate Evacuation Routing
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section" style="background-color: var(--bg-dark);">
+    <div class="container">
+      <div class="section-header scroll-animate">
+        <span class="section-tag">System Features</span>
+        <h2 class="section-title">Intelligent Disaster Mitigation</h2>
+        <p class="section-desc">
+          RescueAI is composed of three specialized, integrated modules designed to handle distinct segments of emergency tracking and containment.
+        </p>
+      </div>
+      
+      <div class="features-grid">
+        <!-- Feature Card 1: Disaster Alerts -->
+        <div class="feature-card scroll-animate">
+          <div class="feature-icon-box">
+            <!-- Icon: Bell/Alert -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            </svg>
+          </div>
+          <h3>Disaster Alerts</h3>
+          <p>
+            Instant alert broadcasting system. Automatically triggers localized cellular broadcasts, SMS, and email updates to notify residents of oncoming hazards.
+          </p>
+          <div class="feature-details" id="details-alerts">
+            <div class="feature-detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Multi-channel broadcast integration (cellular, SMS, web)</span>
+            </div>
+            <div class="feature-detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Sub-second message dispatch times</span>
+            </div>
+            <div class="feature-detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Geo-fenced targeting down to coordinates</span>
+            </div>
+          </div>
+          <span class="feature-learn-more" onclick="toggleDetails('alerts')">
+            <span>Learn More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </span>
+        </div>
+        
+        <!-- Feature Card 2: AI Risk Prediction -->
+        <div class="feature-card scroll-animate delay-100">
+          <div class="feature-icon-box">
+            <!-- Icon: Brain/Network -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.44 2.5 2.5 0 0 1 0-3.12 3 3 0 0 1 0-4.88 2.5 2.5 0 0 1 0-3.12A2.5 2.5 0 0 1 9.5 2Z"/>
+              <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.44 2.5 2.5 0 0 0 0-3.12 3 3 0 0 0 0-4.88 2.5 2.5 0 0 0 0-3.12A2.5 2.5 0 0 0 14.5 2Z"/>
+            </svg>
+          </div>
+          <h3>AI Risk Prediction</h3>
+          <p>
+            Analyzes meteorology trends, satellite radar feeds, and regional sensor grids. Builds spatial hazard risk heatmaps to project spreads hours before impact.
+          </p>
+          <div class="feature-details" id="details-prediction">
+            <div class="feature-detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>LSTM networks for flood stream telemetry forecasting</span>
+            </div>
+            <div class="feature-detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Thermal imaging analysis for wildfire boundaries</span>
+            </div>
+            <div class="feature-detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Geological signal parsing for seismic prediction</span>
+            </div>
+          </div>
+          <span class="feature-learn-more" onclick="toggleDetails('prediction')">
+            <span>Learn More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </span>
+        </div>
+        
+        <!-- Feature Card 3: Emergency Response -->
+        <div class="feature-card scroll-animate delay-200">
+          <div class="feature-icon-box">
+            <!-- Icon: Map/Routing -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+              <line x1="9" y1="3" x2="9" y2="18"/>
+              <line x1="15" y1="6" x2="15" y2="21"/>
+            </svg>
+          </div>
+          <h3>Emergency Response</h3>
+          <p>
+            Intelligent logistical response routing. Generates block-free paths for rescue squads and links supply warehouses directly with shelters needing support.
+          </p>
+          <div class="feature-details" id="details-response">
+            <div class="feature-detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Dynamic routing mapping around road blockages</span>
+            </div>
+            <div class="feature-detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Predictive first responder dispatch matrix</span>
+            </div>
+            <div class="feature-detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Automated disaster shelter supply distribution</span>
+            </div>
+          </div>
+          <span class="feature-learn-more" onclick="toggleDetails('response')">
+            <span>Learn More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info scroll-animate">
+          <div class="contact-header">
+            <span class="section-tag">Get in Touch</span>
+            <h2>Collaborate With Our Research Lab</h2>
+            <p class="section-desc" style="text-align: left;">
+              Have questions about our predictive algorithms, research papers, or want to integrate our API into regional infrastructure? Get in touch.
+            </p>
+          </div>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="contact-item-text">
+                <h4>Email Address</h4>
+                <p>contact@rescueai.edu</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="contact-item-text">
+                <h4>Research HQ</h4>
+                <p>Campus Tech Hub, Building C, Room 404</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="contact-item-text">
+                <h4>API Integration Hotline</h4>
+                <p>+1 (555) 019-9000 (Mon-Fri, 9am - 5pm EST)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-card scroll-animate delay-200">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-input" placeholder="API Integration, Research Paper..." required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell us about your project or inquiry..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Secure Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-brand-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            RescueAI
+          </a>
+          <p>
+            An open-source academic initiative exploring spatial-temporal neural network applications in active emergency mitigation and warning relays.
+          </p>
+        </div>
+        
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Core</a></li>
+            <li><a href="#features">AI Modules</a></li>
+            <li><a href="#contact">Contact Lab</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-status-card">
+          <h4>System Health</h4>
+          <div class="system-status-indicator">
+            <span class="system-status-dot"></span>
+            All AI Inference Models Operational
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 RescueAI Project Group. Built for Academic Showcase.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Security Matrix</a>
+          <a href="#">API Documentation</a>
+          <a href="#">System Diagnostics</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
